@@ -1,0 +1,30 @@
+# Datatypes
+ModulesButtonsCollection    KEYWORD1
+ModulesButton	KEYWORD1
+
+# Methods
+invert 	KEYWORD2
+add KEYWORD2
+setPinMode KEYWORD2
+setSamplingInterval KEYWORD2
+setSleepInterval KEYWORD2
+get KEYWORD2
+getCount KEYWORD2
+isOnly KEYWORD2
+areAll KEYWORD2
+howMany KEYWORD2
+hasChanged KEYWORD2
+flushChanges KEYWORD2
+getPhase KEYWORD2
+
+# Properties
+id LITERAL2
+name LITERAL2
+inverted LITERAL2
+state LITERAL2
+ascending LITERAL2
+descending LITERAL2
+debugEnabled LITERAL2
+
+# Loop and setup
+handle KEYWORD3

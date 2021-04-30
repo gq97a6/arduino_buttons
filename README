@@ -1,0 +1,7 @@
+--------------------------------------------------------
+Library for easier use of buttons in projects.
+All functions explained in example.ino.
+--------------------------------------------------------
+
+You can change default constants of library. 
+They are stored in "constans.h" file.
