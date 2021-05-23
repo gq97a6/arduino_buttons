@@ -456,7 +456,12 @@ void ModulesButtonsCollection::handle()
 {
   for (int i = 0; i < counter; i++)
   {
-    //Clear states
+    //Clear states AFTER change (not with change)
+    if(b[i].ascending || b[i].descending) {
+      b[i].phase = millis();
+    }
+    
+    //Clear slopes
     b[i].ascending = 0;
     b[i].descending = 0;
     
@@ -480,8 +485,6 @@ void ModulesButtonsCollection::handle()
     if (b[i].state != state) //2. Slope check
     {
       sleep = b[i].sleepInterval;
-
-      b[i].phase = millis();
 
       if (state)
       {
