@@ -456,8 +456,8 @@ void ModulesButtonsCollection::handle()
 {
   for (int i = 0; i < counter; i++)
   {
-    //Clear states AFTER change (not with change)
-    if(b[i].ascending || b[i].descending) {
+    //Clear phase after descending slope
+    if(b[i].descending) {
       b[i].phase = millis();
     }
     
@@ -502,6 +502,11 @@ void ModulesButtonsCollection::handle()
       else
       {
         b[i].descending = 1;
+      }
+
+      //Clear phase before on ascending slope
+      if(b[i].ascending) {
+        b[i].phase = millis();
       }
     }
 
