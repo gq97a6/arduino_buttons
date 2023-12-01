@@ -1,4 +1,4 @@
-#include <IoT_Modules-Buttons.h>
+#include <Buttons.h>
 
 ModulesButton buttonsHolder[4]; //Create holder for buttons of desired size
 ModulesButtonsCollection buttons(buttonsHolder, 4); //Pass holder and its size
